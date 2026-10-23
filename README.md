@@ -4,11 +4,9 @@ A modular Windows Forms prototype of a museum-style photo gallery, inspired by w
 
 ## Demo
 
-[![Watch the demo](src/Gallery.DemoVideo/demo-thumbnail.jpg)](src/Gallery.DemoVideo/Demo_App-Gallery.mp4)
+https://github.com/user-attachments/assets/ba5b42ad-0760-4052-91f7-d937e87abe72
 
-A 67-second walkthrough (1280×720) showing room filtering, thumbnail browsing, and the artwork detail view. Click the preview above to open the video, or play it locally from [`src/Gallery.DemoVideo/Demo_App-Gallery.mp4`](src/Gallery.DemoVideo/Demo_App-Gallery.mp4).
-
-> Note: GitHub does not play MP4 files inline in READMEs, so the video opens on its own page for playback/download.
+A 67-second walkthrough (1280×720) showing room filtering, thumbnail browsing, and the artwork detail view. The player above streams a compressed copy of the demo; the full-quality recording is available at [`src/Gallery.DemoVideo/Demo_App-Gallery.mp4`](src/Gallery.DemoVideo/Demo_App-Gallery.mp4).
 
 ## Architecture (Modular)
 
@@ -21,7 +19,7 @@ app-gallery/
 │   ├── Gallery.Data/      # Data access (JSON/embedded exhibition, Met-inspired sample set)
 │   ├── Gallery.Imaging/   # Image loading, resizing, in-memory thumbnail caching
 │   ├── Gallery.App/       # WinForms UI (museum-inspired layout, controls, forms)
-│   └── Gallery.DemoVideo/ # Demo walkthrough video (MP4) and preview thumbnail
+│   └── Gallery.DemoVideo/ # Demo walkthrough video (MP4)
 ├── tests/
 │   └── Gallery.Tests/     # Unit tests (xUnit)
 └── docs/
