@@ -2,6 +2,14 @@
 
 A modular Windows Forms prototype of a museum-style photo gallery, inspired by walking through exhibition rooms. It features room-based filtering, thumbnail browsing, and a clean detail view with artwork metadata and attribution to The Metropolitan Museum of Art Open Access collection.
 
+## Demo
+
+[![Watch the demo](src/Gallery.DemoVideo/demo-thumbnail.jpg)](src/Gallery.DemoVideo/Demo_App-Gallery.mp4)
+
+A 67-second walkthrough (1280×720) showing room filtering, thumbnail browsing, and the artwork detail view. Click the preview above to open the video, or play it locally from [`src/Gallery.DemoVideo/Demo_App-Gallery.mp4`](src/Gallery.DemoVideo/Demo_App-Gallery.mp4).
+
+> Note: GitHub does not play MP4 files inline in READMEs, so the video opens on its own page for playback/download.
+
 ## Architecture (Modular)
 
 This solution follows a layered, modular structure to keep concerns separated and easy to extend:
@@ -12,7 +20,8 @@ app-gallery/
 │   ├── Gallery.Core/      # Domain models & abstractions (IArtworkRepository, IImageLoader, IThumbnailCache)
 │   ├── Gallery.Data/      # Data access (JSON/embedded exhibition, Met-inspired sample set)
 │   ├── Gallery.Imaging/   # Image loading, resizing, in-memory thumbnail caching
-│   └── Gallery.App/       # WinForms UI (museum-inspired layout, controls, forms)
+│   ├── Gallery.App/       # WinForms UI (museum-inspired layout, controls, forms)
+│   └── Gallery.DemoVideo/ # Demo walkthrough video (MP4) and preview thumbnail
 ├── tests/
 │   └── Gallery.Tests/     # Unit tests (xUnit)
 └── docs/
@@ -77,6 +86,7 @@ dotnet test Gallery.sln -c Release
 - **Artwork images**: Sourced from [The Metropolitan Museum of Art Open Access](https://www.metmuseum.org/art/collection) and are in the public domain. Credit lines are displayed in-app.
 - **Application code**: This prototype is provided for educational/project purposes.
 - **Sample data**: `src/Gallery.Data/Exhibitions/ImpressionistGallery.cs` contains curated metadata for the sample exhibition.
+- **Demo video**: `src/Gallery.DemoVideo/Demo_App-Gallery.mp4` is a screen recording of the app; it contains no third-party footage.
 
 ## Customization
 
